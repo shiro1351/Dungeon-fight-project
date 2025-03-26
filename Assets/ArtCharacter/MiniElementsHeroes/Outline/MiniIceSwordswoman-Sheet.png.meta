@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a0c078f11aee755479bed9bd6a214c38
+guid: 94e7a6508cbb56149843511a51ae8885
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,973 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 225
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75bfc1d1ddcff7449cf99fd22b5cb28
+      internalID: -63414216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 225
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644fe4840eea30540952cbc95e919c13
+      internalID: 2089034667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 225
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956c8eeb35c5a1a45a13e498d4faedb7
+      internalID: -604601742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 225
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611c5b96bdfb74b4a98cc079b5df7bf3
+      internalID: 827581316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01b7f19a98dadd4c82ae5eeb4cacd35
+      internalID: -1234899010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 193
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74335edcf7e239f4292df43d46b8f1a1
+      internalID: 677809322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 193
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc41f1e7ddb872498a1f8ee09faf4ee
+      internalID: 377373227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 193
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bef8700ce6af84285896d74ff38843
+      internalID: 2077746041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 193
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e31f29e81b92da4881adc0f396bccae
+      internalID: 1410196503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 193
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27d07a2ef75c7e499c354636f6643c9
+      internalID: -436312228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 161
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd4902d7149f764984415b62adf9b04
+      internalID: 234138030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 161
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7319778dea59cff468b56959a3af065f
+      internalID: 377633217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 161
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de73d4b8f0ceb264d9f89c9761385536
+      internalID: -516474463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 129
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad88189b42683cc40b34ce51d100e6ab
+      internalID: 763429291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 129
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd00bcc57f898142ac5a8934b081908
+      internalID: 1684013604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 129
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cd53877ac187f488763160bf1b379e
+      internalID: 964771859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 129
+        width: 20
+        height: 19
+      alignment: 9
+      pivot: {x: 0.2631672, y: 0.4560057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450c9cc38f0e4c5409e066408888b61d
+      internalID: 1844603620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 129
+        width: 19
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3240244, y: 0.48360938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b023b207260ef0a4b900c3ff1aba16d0
+      internalID: 1394966987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 129
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.29876962, y: 0.48361027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e8415bc9402dd45b519c19fe5806ec
+      internalID: 1197432055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 129
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9072be9ecb9263e40a6e2f9f83006606
+      internalID: -538411223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 97
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c3c0186e76bd6418a6711226da95c0
+      internalID: 463583182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 97
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04466980b6c32f4c993def518e0f3ed
+      internalID: 1119052494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 97
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfb42cb6718ca34d91485698a383139
+      internalID: -861848040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 97
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a3ae65844eb124587910d1ff4a31b1
+      internalID: 1215217515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 97
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52864d4d552d3664687f59a6b67034fa
+      internalID: -1203412015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 97
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1621cdab6327bc04e96e05c810c7d5f1
+      internalID: 1906293004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 97
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a1a77fe923e4140b6f2e03e5282db8
+      internalID: 34375531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 97
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9364737c98a04546a1e6e373b38f80e
+      internalID: 623742883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 97
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057b1a13f7955f647ac9a20a3d10ca22
+      internalID: 1875354471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 97
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3dc2ee57ee47a4fb8ced97568557e4
+      internalID: -344877476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 65
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f28b5e5c15e754b803d3b3ad0e7929
+      internalID: 883351553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 65
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f264ec2d042f47f479e0fa5e60d9b4eb
+      internalID: -306815210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 65
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fb0796966572e43945376f168064ad
+      internalID: 1893441290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9cd085e8625674b842a649bdf3c881
+      internalID: 935155723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 65
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fdc303b711c864897afa03f5e1a26c
+      internalID: -1673991673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 65
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef554800bf085eb4bb092e963e421bfb
+      internalID: -464840519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 65
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e777e77af2b349a8f69829aa38499
+      internalID: 1543756025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 65
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd3826d6a063fa4eb01b949020c4a07
+      internalID: -1927721594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 33
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa71ba1056ee0a48b15ba84e1b8d2cd
+      internalID: 747018610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 33
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d1d3394b8205547bd260317f1697c7
+      internalID: 1141964010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2581619ca8da034faeaef05484c3af3
+      internalID: 1986530807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8446d9187adf648a1b0dfdae5b4386
+      internalID: 692774096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8657d20e26356a146903020d699640be
+      internalID: -1280879438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4df1a527c882f440b428ac2f87fd93e
+      internalID: 1997937787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad5b6e63a8a51640b51247a85a55dc5
+      internalID: -1633303952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniIceSwordswoman-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af0b7f06ca54cf439f03f99ab4992f1
+      internalID: 443429097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +1072,53 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MiniIceSwordswoman-Sheet_0: -63414216
+      MiniIceSwordswoman-Sheet_1: 2089034667
+      MiniIceSwordswoman-Sheet_10: 234138030
+      MiniIceSwordswoman-Sheet_11: 377633217
+      MiniIceSwordswoman-Sheet_12: -516474463
+      MiniIceSwordswoman-Sheet_13: 763429291
+      MiniIceSwordswoman-Sheet_14: 1684013604
+      MiniIceSwordswoman-Sheet_15: 964771859
+      MiniIceSwordswoman-Sheet_16: 1844603620
+      MiniIceSwordswoman-Sheet_17: 1394966987
+      MiniIceSwordswoman-Sheet_18: 1197432055
+      MiniIceSwordswoman-Sheet_19: -538411223
+      MiniIceSwordswoman-Sheet_2: -604601742
+      MiniIceSwordswoman-Sheet_20: 463583182
+      MiniIceSwordswoman-Sheet_21: 1119052494
+      MiniIceSwordswoman-Sheet_22: -861848040
+      MiniIceSwordswoman-Sheet_23: 1215217515
+      MiniIceSwordswoman-Sheet_24: -1203412015
+      MiniIceSwordswoman-Sheet_25: 1906293004
+      MiniIceSwordswoman-Sheet_26: 34375531
+      MiniIceSwordswoman-Sheet_27: 623742883
+      MiniIceSwordswoman-Sheet_28: 1875354471
+      MiniIceSwordswoman-Sheet_29: -344877476
+      MiniIceSwordswoman-Sheet_3: 827581316
+      MiniIceSwordswoman-Sheet_30: 883351553
+      MiniIceSwordswoman-Sheet_31: -306815210
+      MiniIceSwordswoman-Sheet_32: 1893441290
+      MiniIceSwordswoman-Sheet_33: 935155723
+      MiniIceSwordswoman-Sheet_34: -1673991673
+      MiniIceSwordswoman-Sheet_35: -464840519
+      MiniIceSwordswoman-Sheet_36: 1543756025
+      MiniIceSwordswoman-Sheet_37: -1927721594
+      MiniIceSwordswoman-Sheet_38: 747018610
+      MiniIceSwordswoman-Sheet_39: 1141964010
+      MiniIceSwordswoman-Sheet_4: -1234899010
+      MiniIceSwordswoman-Sheet_40: 1986530807
+      MiniIceSwordswoman-Sheet_41: 692774096
+      MiniIceSwordswoman-Sheet_42: -1280879438
+      MiniIceSwordswoman-Sheet_43: 1997937787
+      MiniIceSwordswoman-Sheet_44: -1633303952
+      MiniIceSwordswoman-Sheet_45: 443429097
+      MiniIceSwordswoman-Sheet_5: 677809322
+      MiniIceSwordswoman-Sheet_6: 377373227
+      MiniIceSwordswoman-Sheet_7: 2077746041
+      MiniIceSwordswoman-Sheet_8: 1410196503
+      MiniIceSwordswoman-Sheet_9: -436312228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -19,10 +19,12 @@ public class HammerMan: MonoBehaviour
     private bool isAttack = false;
     public float saveSpeed; // Lưu speed hiện tại
     private bool isDefend = false;
+    private int n_jump;
     void Start()
     {
         move = Vector3.zero;
         saveSpeed = speed;
+        n_jump = 0;
     }
 
     // Update is called once per frame
@@ -30,10 +32,11 @@ public class HammerMan: MonoBehaviour
     {
         // Check if the player is grounded
         isGround = checkGround();
-
+        if(isGround) n_jump = 0; // Reset so lan nhảy
         // Jumping logic
-        if (Input.GetKeyDown(KeyCode.J) && isGround)
+        if (Input.GetKeyDown(KeyCode.J) && n_jump < 1)
         {
+            n_jump ++;
             Jump();
         }
 
@@ -42,13 +45,13 @@ public class HammerMan: MonoBehaviour
         {
            if(!isAttack)
            {
-               ChangeAnim("JumpOut");
+               ChangeAnim("Fall");
                isJumping = false;
            }
            else if(isAttack)
            {
                 speed = 0; // Set speed = 0 để không bị di chuyển khi nhảy
-                ChangeAnim("SkillOut");
+                ChangeAnim("FallSkill");
                 StartCoroutine(WaitSkill());
            }
         }
@@ -142,7 +145,7 @@ public class HammerMan: MonoBehaviour
     public void Attack()    // Attack animation
     {
         isAttack = true;
-        ChangeAnim("HitNormal");
+        ChangeAnim("Attack");
         StartCoroutine(WaitAttack());
     }
 
@@ -154,7 +157,7 @@ public class HammerMan: MonoBehaviour
     public void Jump() // Jumping animation
     {
         isJumping = true;
-        ChangeAnim("Jumping");
+        ChangeAnim("Jump");
         rb.AddForce(jumpForce * Vector2.up, ForceMode2D.Impulse);
         transform.localScale = new Vector3(Mathf.Sign(move.x) * 2.0f, 2.0f, 1);
     }

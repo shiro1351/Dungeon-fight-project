@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 639e0216304471a4fb5e277c646c137f
+guid: 09dfa4d12789eed4d9a39d47d1fe751f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,1099 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 225
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c863548650f4142b298539c352510a
+      internalID: 973577040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 225
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3360301da77310449922f802b60e76e4
+      internalID: -633187269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 225
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdedd0b166c2e946b32d377905a9e72
+      internalID: -2017388732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 225
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08b94921c0fbc0438988fe82dd3f7a6
+      internalID: -328352867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 193
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d9e5c4ab15dec40842a2d2def97ae6
+      internalID: -131605919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 193
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b951f16ee06294386754165601104c
+      internalID: 1701366953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 194
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d850cfa9b369b4991a5f559cd7bb65
+      internalID: -1302135643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 193
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d011179e4eeffd4db0f11092ba8d151
+      internalID: 1185596301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 193
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2396d3a22a9b04d9119cd3c35d4aa7
+      internalID: 1550725686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 194
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa78c289865ecf24dbc15c00a8f03627
+      internalID: -53333120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 162
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e6d0158603da042875ce980801dac4
+      internalID: -1823134337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 162
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b400427b5372d44a970071ba2ae9c88
+      internalID: -941560833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 161
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c69cf4e184c6149b7d67e32f94a712
+      internalID: -1876197451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 129
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945e1d9b57e250d418c08bc77e16c93a
+      internalID: 1997624234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 129
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e718d921b6834e74eb43ab1e9b5bf803
+      internalID: 1128073106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 129
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72140c98779f5a4aa8e5a35d508cdf8
+      internalID: -976968939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 129
+        width: 14
+        height: 13
+      alignment: 9
+      pivot: {x: 0.46075058, y: 0.5211346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e96735f41693c4ca6053973e082ecb
+      internalID: 2107545408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 129
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.3383807, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bd330629d30dd40be35db2d1323f55
+      internalID: -1720514547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 129
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.3707051, y: 0.5211346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced4c55788bf26e46be012c1a6dd4964
+      internalID: -1539926976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 129
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.3383807, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3de3228bcd9e54ea4dc8f6c2a4a3b4
+      internalID: 1105779869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 129
+        width: 14
+        height: 13
+      alignment: 9
+      pivot: {x: 0.42150116, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8ad9b2a4fab8342a5bfc26b2f34954
+      internalID: -1245251111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 129
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1992760651898de4eac46e15b601172a
+      internalID: -2107132251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 97
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c8202c853ce5a46a51d4ea6384ae63
+      internalID: 401719919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 97
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6875760d3249b624c85cc834d21b42f3
+      internalID: 12170988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 97
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176964ee230303b44a63d338905cf315
+      internalID: -1105284814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 95
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf64af55885fb1149ad7241d93461985
+      internalID: 655679427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 96
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf269d687a257cb4aaadcb35134971aa
+      internalID: -31316517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 97
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f3bb71e311fc246a0d7fd239026744
+      internalID: -1034198857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 97
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3159d509d51205c40b320492bff3fa32
+      internalID: -2030968175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 97
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fde4583a2f8481469f41c4932dee6f4
+      internalID: -721320996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 66
+        width: 11
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5397686, y: 0.30559936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449b0cfe72879494f89513a3cbe81d4e
+      internalID: 2044108644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 65
+        width: 22
+        height: 30
+      alignment: 9
+      pivot: {x: 0.50000346, y: 0.25213978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ccf518807e1a7428130b11650f54f2
+      internalID: 34526035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 65
+        width: 22
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5397686, y: 0.25005558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621d88c781650c4428845541496930c7
+      internalID: 1695184472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 65
+        width: 8
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5546913, y: 0.32884383}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f446f4c4b495a6c42ab70836588aee38
+      internalID: -1548599161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 65
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a60bc6c3bdda4b40910fd43487aca19
+      internalID: -752934361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 65
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e166e4e8b1322924a97a055a3996baa5
+      internalID: 2095465620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc04ceda073382a43a26ee8a2ae11d1f
+      internalID: 475193030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 65
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.59113187, y: 0.2569987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbd2aa4f66d1854281f5632cfebc6d3
+      internalID: 1114767902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 65
+        width: 25
+        height: 28
+      alignment: 9
+      pivot: {x: 0.6399719, y: 0.2500542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59871bb843d04541a5ff8969d82d8e4
+      internalID: 128954088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 65
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2226fbccce2b67b42bba21280abab376
+      internalID: 807654492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 33
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e8ef38b1127744c9b0b3ae7309cbd4
+      internalID: 1248722217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 33
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22998af385af7fc4f9bc0898a0941c12
+      internalID: 1105793067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a49a64ffa0b6240ac5529c03e6374b
+      internalID: 1055733080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5199dbe2610a4542872d3e22fd8f400
+      internalID: 2004948012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fc6d0d71492704b9fe188a191d86b9
+      internalID: -2067923767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afdcc963f27a074190ed26264599f27
+      internalID: 1924384808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d59448a4c1f2b44b4fe0f42bf83b04
+      internalID: 325747050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefdb912e05f44840a95c35076f0975c
+      internalID: -183441973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 65
+        width: 22
+        height: 25
+      alignment: 9
+      pivot: {x: 0.52568924, y: 0.32659775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7dfbb4ca9d1964fa78e0fb2ec9c3fa
+      internalID: -2038297370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 65
+        width: 20
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5000008, y: 0.30559963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fca19de42216540b160f33ea7be206
+      internalID: 901813634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 65
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5df107ac9ef894093c18ada2f98d7a
+      internalID: -786540644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniLightningWarrior-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 102
+        width: 6
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5112712, y: 0.41565377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9449f1bd9ddfedc4f861d26f0b454331
+      internalID: 1798917607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +1198,61 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MiniLightningWarrior-Sheet_0: 973577040
+      MiniLightningWarrior-Sheet_1: -633187269
+      MiniLightningWarrior-Sheet_10: -1823134337
+      MiniLightningWarrior-Sheet_11: -941560833
+      MiniLightningWarrior-Sheet_12: -1876197451
+      MiniLightningWarrior-Sheet_13: 1997624234
+      MiniLightningWarrior-Sheet_14: 1128073106
+      MiniLightningWarrior-Sheet_15: -976968939
+      MiniLightningWarrior-Sheet_16: 2107545408
+      MiniLightningWarrior-Sheet_17: -1720514547
+      MiniLightningWarrior-Sheet_18: -1539926976
+      MiniLightningWarrior-Sheet_19: 1105779869
+      MiniLightningWarrior-Sheet_2: -2017388732
+      MiniLightningWarrior-Sheet_20: -1245251111
+      MiniLightningWarrior-Sheet_21: -2107132251
+      MiniLightningWarrior-Sheet_22: 401719919
+      MiniLightningWarrior-Sheet_23: 12170988
+      MiniLightningWarrior-Sheet_24: -1105284814
+      MiniLightningWarrior-Sheet_25: 655679427
+      MiniLightningWarrior-Sheet_26: -31316517
+      MiniLightningWarrior-Sheet_27: -1034198857
+      MiniLightningWarrior-Sheet_28: -2030968175
+      MiniLightningWarrior-Sheet_29: -721320996
+      MiniLightningWarrior-Sheet_3: -328352867
+      MiniLightningWarrior-Sheet_30: 2044108644
+      MiniLightningWarrior-Sheet_31: 34526035
+      MiniLightningWarrior-Sheet_32: 1695184472
+      MiniLightningWarrior-Sheet_33: 1798917607
+      MiniLightningWarrior-Sheet_34: -2121074844
+      MiniLightningWarrior-Sheet_35: -1548599161
+      MiniLightningWarrior-Sheet_36: -752934361
+      MiniLightningWarrior-Sheet_37: 2095465620
+      MiniLightningWarrior-Sheet_38: 475193030
+      MiniLightningWarrior-Sheet_39: 1114767902
+      MiniLightningWarrior-Sheet_4: -131605919
+      MiniLightningWarrior-Sheet_40: 128954088
+      MiniLightningWarrior-Sheet_41: 807654492
+      MiniLightningWarrior-Sheet_42: 1248722217
+      MiniLightningWarrior-Sheet_43: 1105793067
+      MiniLightningWarrior-Sheet_44: 1055733080
+      MiniLightningWarrior-Sheet_45: 2004948012
+      MiniLightningWarrior-Sheet_46: -2067923767
+      MiniLightningWarrior-Sheet_47: 1924384808
+      MiniLightningWarrior-Sheet_48: 325747050
+      MiniLightningWarrior-Sheet_49: -183441973
+      MiniLightningWarrior-Sheet_5: 1701366953
+      MiniLightningWarrior-Sheet_50: -2038297370
+      MiniLightningWarrior-Sheet_51: 901813634
+      MiniLightningWarrior-Sheet_52: -786540644
+      MiniLightningWarrior-Sheet_53: -1016488907
+      MiniLightningWarrior-Sheet_6: -1302135643
+      MiniLightningWarrior-Sheet_7: 1185596301
+      MiniLightningWarrior-Sheet_8: 1550725686
+      MiniLightningWarrior-Sheet_9: -53333120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

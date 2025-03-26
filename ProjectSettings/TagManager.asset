@@ -2,13 +2,13 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 3
+  serializedVersion: 2
   tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
@@ -42,28 +42,44 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: 1
-    uniqueID: 3193272611
+    uniqueID: 2686592769
     locked: 0
   - name: 2
-    uniqueID: 1929473565
+    uniqueID: 2124881217
     locked: 0
   - name: 3
-    uniqueID: 2928853461
+    uniqueID: 2028859231
     locked: 0
   - name: 4
-    uniqueID: 2267216769
+    uniqueID: 2268542601
     locked: 0
   - name: 5
-    uniqueID: 1850262289
+    uniqueID: 568480259
     locked: 0
   - name: 6
-    uniqueID: 2884461449
+    uniqueID: 3831058375
     locked: 0
   - name: 7
-    uniqueID: 2340965341
+    uniqueID: 1059017775
     locked: 0
   - name: 8
-    uniqueID: 1950617335
+    uniqueID: 3700111907
     locked: 0
-  m_RenderingLayers:
-  - Default
+  - name: 9
+    uniqueID: 3522572671
+    locked: 0
+  - name: 10
+    uniqueID: 3897262801
+    locked: 0
+  - name: 11
+    uniqueID: 2866772327
+    locked: 0
+  - name: 12
+    uniqueID: 346184947
+    locked: 0
+  - name: 13
+    uniqueID: 1128921317
+    locked: 0
+  - name: 14
+    uniqueID: 4036103603
+    locked: 0
