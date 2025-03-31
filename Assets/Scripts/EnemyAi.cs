@@ -5,10 +5,12 @@ public class EnemyAI : MonoBehaviour
 {
     public float speed = 2f;
     public float attackRange = 1.5f;
+
     private Transform target;
     private bool isChasing = false;
     private bool isAttacking = false;
     private bool isGrounded = false;
+    private Coroutine attackCoroutine;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -23,7 +25,7 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
         boxCollider = GetComponent<BoxCollider2D>();
-        boxCollider.isTrigger = true; // Đảm bảo collider phát hiện va chạm
+        boxCollider.isTrigger = true;
 
         SetIdleState();
     }
@@ -32,20 +34,20 @@ public class EnemyAI : MonoBehaviour
     {
         isGrounded = CheckGround();
 
-        if (isChasing && target != null && !isAttacking)
+        if (isChasing && target != null)
         {
             float distanceToPlayer = Vector2.Distance(transform.position, target.position);
 
-            if (distanceToPlayer > attackRange)
+            if (distanceToPlayer > attackRange && !isAttacking)
             {
                 MoveTowardsPlayer();
             }
-            else
+            else if (!isAttacking)
             {
-                StartCoroutine(Attack());
+                attackCoroutine = StartCoroutine(Attack());
             }
         }
-        else if (!isChasing && !isAttacking)
+        else if (!isChasing)
         {
             SetIdleState();
         }
@@ -60,8 +62,11 @@ public class EnemyAI : MonoBehaviour
 
         FlipSprite(direction.x);
 
-        anim.SetBool("Run", true);
-        anim.SetBool("Idle", false);
+        if (!isAttacking)
+        {
+            anim.SetBool("Run", true);
+            anim.SetBool("Idle", false);
+        }
     }
 
     private bool CheckGround()
@@ -76,33 +81,71 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void FlipSprite(float directionX)
+{
+    if (directionX != 0)
     {
-        if (directionX != 0)
+        bool facingRight = transform.localScale.x > 0; // Kiểm tra hướng hiện tại
+        if ((directionX > 0 && !facingRight) || (directionX < 0 && facingRight))
         {
-            Vector3 scale = transform.localScale;
-            scale.x = (directionX > 0) ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x);
-            transform.localScale = scale;
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
     }
+}
+
+
 
     private IEnumerator Attack()
     {
         isAttacking = true;
-        anim.SetTrigger("Attack");
-        anim.SetBool("Run", false);
-        rb.velocity = Vector2.zero;
 
-        yield return new WaitForSeconds(0.5f);
+        anim.ResetTrigger("Attack");
+        anim.SetTrigger("Attack");
+
+        rb.velocity = Vector2.zero;
+        anim.SetBool("Run", false);
+        anim.SetBool("Idle", false);
+        anim.SetBool("Attack", true);
+
+        float attackTime = anim.GetCurrentAnimatorStateInfo(0).length;
+        float timer = 0f;
+
+        while (timer < attackTime)
+        {
+            if (!isChasing || target == null)
+            {
+                Debug.Log("Dừng attack vì Player đã rời khỏi vùng!");
+                anim.SetBool("Attack", false);
+                isAttacking = false;
+                SetIdleState();
+                yield break;
+            }
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
         isAttacking = false;
+
+        if (isChasing && target != null)
+        {
+            float distanceToPlayer = Vector2.Distance(transform.position, target.position);
+            if (distanceToPlayer <= attackRange)
+            {
+                attackCoroutine = StartCoroutine(Attack());
+                yield break;
+            }
+        }
+
         SetIdleState();
     }
 
     private void SetIdleState()
     {
+        if (isAttacking) return;
+
         rb.velocity = Vector2.zero;
         anim.SetBool("Run", false);
         anim.SetBool("Idle", true);
-        anim.Play("Idle");
+        anim.SetBool("Attack", false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -113,6 +156,15 @@ public class EnemyAI : MonoBehaviour
             target = other.transform;
             isChasing = true;
         }
+        
+        if (other == capsuleCollider && isChasing)
+        {
+            Debug.Log("Player chạm vào enemy -> Bắt đầu Attack!");
+            if (!isAttacking)
+            {
+                attackCoroutine = StartCoroutine(Attack());
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -122,6 +174,16 @@ public class EnemyAI : MonoBehaviour
             Debug.Log("Player rời vùng phát hiện!");
             target = null;
             isChasing = false;
+
+            if (attackCoroutine != null)
+            {
+                StopCoroutine(attackCoroutine);
+                attackCoroutine = null;
+            }
+            
+            anim.SetBool("Attack", false);
+            isAttacking = false;
+            
             SetIdleState();
         }
     }
