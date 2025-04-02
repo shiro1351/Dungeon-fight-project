@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -10,13 +9,19 @@ public class EnemyAI : MonoBehaviour
 
     private string currentAnim;
     private Transform target;
-    private bool isChasing, isAttacking, isGrounded;
+    private bool isChasing, isAttacking, isGrounded, isTakingDamage;
     private float saveSpeed;
     private Animator anim;
     private Rigidbody2D rb;
     private CapsuleCollider2D capsuleCollider;
     private BoxCollider2D boxCollider;
     [SerializeField] private float Hp;
+    [SerializeField] private float attackDamage; // Sát thương mỗi đòn đánh
+
+    private Coroutine attackCoroutine;
+    private Coroutine damageCoroutine;
+    
+    private Character player; // Tham chiếu đến máu của Player
 
     void Start()
     {
@@ -31,12 +36,18 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         isGrounded = CheckGround();
-        if (isGrounded && !isChasing && !isAttacking)
+        if (Hp <= 0f)
+        {
+            Die();
+            return;
+        }
+
+        if (!isTakingDamage && isGrounded && !isChasing && !isAttacking)
         {
             ChangeAnim("Idle");
         }
-        
-        if (isGrounded && isChasing)
+
+        if (!isTakingDamage && isGrounded && isChasing)
         {
             float distance = Vector3.Distance(transform.position, target.position);
             if (distance > attackRange)
@@ -44,12 +55,6 @@ public class EnemyAI : MonoBehaviour
                 isAttacking = false;
                 speed = saveSpeed;
                 MoveToPlayer();
-            }
-            else
-            {
-                isAttacking = true;
-                speed = 0;
-                Attack();
             }
         }
     }
@@ -62,7 +67,7 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void MoveToPlayer()
     {
-        if (target != null)
+        if (target != null && !isAttacking && !isTakingDamage)
         {
             Vector3 direction = target.position - transform.position;
             FlipSprite(direction.x);
@@ -73,21 +78,32 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void Attack()
     {
-        ChangeAnim("Attack");
-        StartCoroutine(WaitAttack());
+        if (Hp > 0 && target != null && !isTakingDamage)
+        {
+            isAttacking = true;
+            ChangeAnim("Attack");
+            StartCoroutine(AttackSequence());
+        }
     }
 
-    protected IEnumerator WaitAttack()
+    protected IEnumerator AttackSequence()
     {
-        yield return new WaitForSeconds(0.5f);
-        isAttacking = false;
+        yield return new WaitForSeconds(0.5f); // Thời gian ra đòn
+
+        if (Vector3.Distance(transform.position, target.position) <= attackRange && isAttacking)
+        {
+            player?.TakeDamage(attackDamage);
+        }
+        isAttacking = false; 
+        ChangeAnim("Idle"); // Sau khi đánh xong, quái trở lại trạng thái Idle
+        yield return new WaitForSeconds(1.5f); // Đợi 1.5s trước khi tấn công tiếp
     }
 
     private void FlipSprite(float directionX)
     {
         if (directionX != 0)
         {
-            bool facingRight = transform.localScale.x > 0; 
+            bool facingRight = transform.localScale.x > 0;
             if ((directionX > 0 && !facingRight) || (directionX < 0 && facingRight))
             {
                 transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
@@ -101,6 +117,14 @@ public class EnemyAI : MonoBehaviour
         {
             isChasing = true;
             target = collision.transform;
+            
+            // Lấy tham chiếu đến PlayerHealth
+            player = collision.GetComponent<Character>();
+
+            if (attackCoroutine == null) 
+            {
+                attackCoroutine = StartCoroutine(AttackRoutine());
+            }
         }
     }
 
@@ -112,7 +136,26 @@ public class EnemyAI : MonoBehaviour
             isAttacking = false;
             speed = saveSpeed;
             target = null;
-        }      
+            player = null; // Reset tham chiếu
+
+            if (attackCoroutine != null)
+            {
+                StopCoroutine(attackCoroutine);
+                attackCoroutine = null;
+            }
+        }
+    }
+
+    private IEnumerator AttackRoutine()
+    {
+        while (true)
+        {
+            if (!isTakingDamage && target != null && Vector3.Distance(transform.position, target.position) <= attackRange && Hp > 0 && !isAttacking)
+            {
+                Attack();
+            }
+            yield return new WaitForSeconds(1.5f); // Chờ 1.5s trước khi kiểm tra tấn công tiếp
+        }
     }
 
     protected virtual void ChangeAnim(string animName)
@@ -124,19 +167,36 @@ public class EnemyAI : MonoBehaviour
             anim.SetTrigger(currentAnim);
         }
     }
+
     public void TakeDamage(float damage)
     {
         Hp -= damage;
+        
         if (Hp <= 0)
         {
             Die();
+            return;
         }
+
+        if (damageCoroutine != null)
+        {
+            StopCoroutine(damageCoroutine); // Reset lại nếu bị đánh liên tiếp
+        }
+        damageCoroutine = StartCoroutine(DamageRoutine());
+    }
+
+    private IEnumerator DamageRoutine()
+    {
+        isTakingDamage = true;
+        ChangeAnim("Damage");
+        yield return new WaitForSeconds(1.0f);
+        isTakingDamage = false;
     }
 
     private void Die()
     {
-        ChangeAnim("Die");
-        Destroy(gameObject, 1f); // Xóa kẻ địch sau 1 giây
+        ChangeAnim("Death");
+        speed = 0;
+        Destroy(gameObject, 1.5f);
     }
-
 }

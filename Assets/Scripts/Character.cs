@@ -25,6 +25,8 @@ public class Character : MonoBehaviour
     [SerializeField] protected float luongMauHienTai;
     private float luongMauToiDa;
     [SerializeField] protected float damage;
+    protected EnemyAI enemyAi;
+    private bool isTalkingDamage = false;
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,6 +37,7 @@ public class Character : MonoBehaviour
         thanhMau = FindAnyObjectByType<ThanhMau>();
         luongMauToiDa = luongMauHienTai;
         thanhMau.updateBlood(luongMauHienTai,luongMauToiDa);
+        enemyAi = FindAnyObjectByType<EnemyAI>();
     }
 
     protected virtual void Update()
@@ -43,24 +46,28 @@ public class Character : MonoBehaviour
         if (isGround) n_jump = 0;
         HandleInput();
         MoveCharacter();
+        if(isGround && !isAttack && !isDefend && isTalkingDamage)
+        {
+            StartCoroutine(WaitHit());
+        }
     }
 
     protected void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && n_jump < 1)
+        if (Input.GetKeyDown(KeyCode.Space) && n_jump < 1 && !isTalkingDamage)
         {
             n_jump++;
             Jump();
         }
 
-        if (!isGround && rb.velocity.y < 0 && !isAttack)
+        if (!isGround && rb.velocity.y < 0 && !isAttack  && !isTalkingDamage) 
         {
             ChangeAnim("Fall");
             isJumping = false;
         }
         Skill();
         Defend();
-        if (Input.GetKeyDown(KeyCode.K) && isGround && !isAttack && !isDefend)
+        if (Input.GetKeyDown(KeyCode.K) && isGround && !isAttack && !isDefend  && !isTalkingDamage)
         {
             Attack();
         }
@@ -71,12 +78,12 @@ public class Character : MonoBehaviour
         move.x = Input.GetAxisRaw("Horizontal");
         transform.position += move * Time.deltaTime * speed;
 
-        if (move.x != 0 && isGround && !isAttack && !isJumping && !isDefend)
+        if (move.x != 0 && isGround && !isAttack && !isJumping && !isDefend  && !isTalkingDamage)
         {
             Run();
         }
 
-        if (isGround && !isJumping && !isAttack && !isDefend && move.x == 0)
+        if (isGround && !isJumping && !isAttack && !isDefend && move.x == 0  && !isTalkingDamage)
         {
             ChangeAnim("Idle");
         }
@@ -109,11 +116,16 @@ public class Character : MonoBehaviour
 
     protected void AttackRange()
     {
-        // Kiểm tra kẻ địch trong phạm vi
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        foreach (Collider2D enemy in hitEnemies)
+        foreach (Collider2D enemyCollider in hitEnemies)
         {
+            // Lấy GameObject chính của enemy
+            GameObject enemy = enemyCollider.gameObject;
+
+            // Bỏ qua nếu collider này là trigger
+            if (enemyCollider.isTrigger) continue;
+
             Debug.Log("Hit " + enemy.name);
             enemy.GetComponent<EnemyAI>()?.TakeDamage(damage);
         }
@@ -169,6 +181,32 @@ public class Character : MonoBehaviour
     
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-
     }
-}
+
+    public void TakeDamage(float damage)
+    {
+        luongMauHienTai -= damage;
+        isTalkingDamage = true;
+        thanhMau.updateBlood(luongMauHienTai,luongMauToiDa);
+        speed = 0;
+
+        if(luongMauHienTai <= 0f)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        ChangeAnim("Dead");
+        Time.timeScale = 0;
+    }
+
+    private IEnumerator WaitHit()
+    {
+        ChangeAnim("Hit");
+        yield return new WaitForSeconds(0.5f);
+        isTalkingDamage = false;
+        speed = saveSpeed;
+    }
+ }
