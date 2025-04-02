@@ -8,13 +8,13 @@ using UnityEngine.SceneManagement;
 public class Lightman: Character
 {
     [SerializeField] private Bullet bullet;
-    protected override void Start()
+    void Start()
     {
         base.Start();
     }
 
     // Update is called once per frame
-    protected override void Update()
+    void Update()
     {
        
        base.Update();
