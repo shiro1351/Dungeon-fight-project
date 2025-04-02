@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Dungeon-fight-project-Thang.sln"
+    "dotnet.defaultSolution": "Dungeon-fight-project.sln"
 }
