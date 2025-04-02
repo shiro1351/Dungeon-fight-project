@@ -124,4 +124,19 @@ public class EnemyAI : MonoBehaviour
             anim.SetTrigger(currentAnim);
         }
     }
+    public void TakeDamage(float damage)
+    {
+        Hp -= damage;
+        if (Hp <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        ChangeAnim("Die");
+        Destroy(gameObject, 1f); // Xóa kẻ địch sau 1 giây
+    }
+
 }

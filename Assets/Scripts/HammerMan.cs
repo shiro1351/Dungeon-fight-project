@@ -8,13 +8,13 @@ using UnityEngine.SceneManagement;
 public class HammerMan: Character
 {
   
-    void Start()
+    protected override void Start()
     {
         base.Start();
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
         // Check if the player is grounded
         base.Update();
